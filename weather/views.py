@@ -69,4 +69,4 @@ def weather_api(request):
             {"forecast_data": forecast_data},
         )
 
-    return render(request, "weather/weather_form.html")
+    return render(request, "weather/index.html")
