@@ -1,0 +1,32 @@
+<!-- weather_form.html -->
+<html>
+<head>
+  <title>Weather Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <h1 class="text-3xl font-bold text-center my-8"> Weather Form </h1>
+  <form method="POST" id="weather-form" class="max-w-sm mx-auto">
+    {% csrf_token %}
+    <div class="mb-4">
+      <label for="lat" class="block mb-2 font-bold">Latitude:</label>
+      <input type="text" id="lat" name="lat" required class="w-full border border-gray-300 rounded px-3 py-2">
+    </div>
+    <div class="mb-4">
+      <label for="lon" class="block mb-2 font-bold">Longitude:</label>
+      <input type="text" id="lon" name="lon" required class="w-full border border-gray-300 rounded px-3 py-2">
+    </div>
+    <div class="mb-4">
+      <label for="detailing_type" class="block mb-2 font-bold">Detailing Type:</label>
+      <select id="detailing_type" name="detailing_type" class="w-full border border-gray-300 rounded px-3 py-2">
+        <option value="minute">Minute forecast for 1 hour</option>
+        <option value="hourly">Hourly forecast for 48 hours</option>
+        <option value="daily">Daily forecast for 7 days</option>
+      </select>
+    </div>
+    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      Get Weather Forecast
+    </button>
+  </form>
+</body>
+</html>
