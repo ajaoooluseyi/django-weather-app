@@ -2,8 +2,8 @@
 
 
 ## Description
-It is a weather forecast app API built on Django. It takes latitude and lomgitude and returns weather forcast
-on either of thr three categories:
+It is a weather forecast app API built on Django. It takes latitude and longitude and returns weather forecast of the location
+on either of this three categories:
 
 * Minute forecast for 1 hour
 * Hourly forecast for 48 hours
