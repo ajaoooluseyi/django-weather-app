@@ -5,9 +5,9 @@
 It is a weather forecast app API built on Django. It takes latitude and lomgitude and returns weather forcast
 on either of thr three categories:
 
-● Minute forecast for 1 hour
-● Hourly forecast for 48 hours
-● Daily forecast for 7 days
+* Minute forecast for 1 hour
+* Hourly forecast for 48 hours
+* Daily forecast for 7 days
 
 ### Dependencies
 
@@ -54,5 +54,7 @@ $ pip install -r requirements.txt
 
 To run the app, navigate to the app folder in your virtual environment and execute the command below
 ```python
+$ python manage.py migrate
+
 $ python manage.py runserver
 ```
